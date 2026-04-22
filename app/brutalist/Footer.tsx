@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="bg-nb-black border-t-nb border-nb-yellow px-5 md:px-10 py-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center">
       <div className="font-mono text-sm text-nb-yellow">
-        ASHISH M — {new Date().getFullYear()}
+        ASHISH M {new Date().getFullYear()}
       </div>
       
       <div className="font-mono text-xs text-zinc-500">

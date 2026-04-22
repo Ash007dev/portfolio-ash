@@ -37,7 +37,7 @@ export default function Skills() {
   return (
     <section id="skills" className="py-24 md:py-32 px-5 md:px-10 overflow-hidden">
       <span className="inline-block bg-nb-black text-nb-yellow border-nb border-nb-black px-4 py-2 font-mono font-bold text-xs tracking-widest mb-6 shadow-nb-sm">
-        003 — TECH STACK
+        003 TECH STACK
       </span>
 
       <h2 className="font-display text-[56px] md:text-[72px] leading-[0.95] uppercase text-nb-black">

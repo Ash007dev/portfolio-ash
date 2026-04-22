@@ -21,7 +21,7 @@ export default function Projects() {
   return (
     <section id="projects" className="py-24 md:py-32 px-5 md:px-10 bg-nb-black border-t-nb border-b-nb border-nb-black overflow-hidden">
       <span className="inline-block bg-nb-yellow text-nb-black border-nb border-nb-yellow px-4 py-2 font-mono font-bold text-xs tracking-widest mb-6 shadow-nb-sm">
-        002 — PROJECTS
+        002 PROJECTS
       </span>
 
       <h2 className="font-display text-[56px] md:text-[72px] leading-[0.95] uppercase text-nb-white">

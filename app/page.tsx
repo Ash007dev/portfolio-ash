@@ -11,7 +11,7 @@ import {
 import WavyGrid from "./components/WavyGrid";
 import NeoBrutalismView from "./brutalist/NeoBrutalismView";
 
-// --- DATA ---
+// DATA
 
 const PROJECTS = [
   {
@@ -142,7 +142,7 @@ export default function Home() {
       {/* WAVY GRID BACKGROUND */}
       <WavyGrid />
 
-      {/* --- NAV --- */}
+      {/* NAV */}
       <motion.nav
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -183,7 +183,7 @@ export default function Home() {
         initial="hidden"
         animate="visible"
       >
-        {/* --- HERO --- */}
+        {/* HERO */}
         <motion.section className="mb-40" variants={itemVariants}>
           <div className="relative mb-6 cursor-default group w-fit">
             <h1 className="text-7xl md:text-9xl font-bold tracking-tighter text-white flex items-end leading-[0.85]">
@@ -224,7 +224,7 @@ export default function Home() {
           </p>
         </motion.section>
 
-        {/* --- ABOUT --- */}
+        {/* ABOUT */}
         <motion.section id="about" className="mb-40 scroll-mt-32" variants={itemVariants}>
           <h2 className="text-sm font-mono text-zinc-500 mb-8 uppercase tracking-widest">
             / About Me
@@ -250,7 +250,7 @@ export default function Home() {
           </div>
         </motion.section>
 
-        {/* --- EDUCATION --- */}
+        {/* EDUCATION */}
         <motion.section id="education" className="mb-40 scroll-mt-32" variants={itemVariants}>
           <div className="flex items-center justify-between mb-12 border-b border-zinc-800 pb-4">
             <h2 className="text-3xl font-bold text-white">Education</h2>
@@ -300,7 +300,7 @@ export default function Home() {
           </div>
         </motion.section>
 
-        {/* --- PROJECTS --- */}
+        {/* PROJECTS */}
         <motion.section id="projects" className="mb-40 scroll-mt-32" variants={itemVariants}>
           <div className="flex items-center justify-between mb-12 border-b border-zinc-800 pb-4">
             <h2 className="text-3xl font-bold text-white">Projects</h2>
@@ -379,7 +379,7 @@ export default function Home() {
           </div>
         </motion.section>
 
-        {/* --- HACKATHONS --- */}
+        {/* HACKATHONS */}
         <motion.section id="hackathons" className="mb-40 scroll-mt-32" variants={itemVariants}>
           <div className="flex items-center gap-3 mb-12 border-b border-zinc-800 pb-4">
             <Trophy size={24} className="text-yellow-500" />
@@ -421,7 +421,7 @@ export default function Home() {
           </div>
         </motion.section>
 
-        {/* --- SKILLS --- */}
+        {/* SKILLS */}
         <motion.section id="skills" className="mb-40 scroll-mt-32" variants={itemVariants}>
           <h2 className="text-3xl font-bold text-white mb-12">Tech Stack</h2>
 
@@ -506,7 +506,7 @@ export default function Home() {
           </div>
         </motion.section>
 
-        {/* --- CONTACT / FOOTER --- */}
+        {/* CONTACT / FOOTER */}
         <motion.section id="contact" className="pt-20 border-t border-zinc-900 scroll-mt-32" variants={itemVariants}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>

@@ -18,7 +18,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-24 md:py-32 px-5 md:px-10 min-h-[80vh] flex flex-col items-center text-center overflow-hidden">
       <span className="inline-block bg-nb-blue text-white border-nb border-nb-black px-4 py-2 font-mono font-bold text-xs tracking-widest mb-6 shadow-nb-sm">
-        005 — CONTACT
+        005 CONTACT
       </span>
 
       <motion.h2

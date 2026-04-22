@@ -15,7 +15,7 @@ export default function About() {
           transition={{ duration: 0.8 }}
         >
           <span className="inline-block bg-nb-blue text-white border-nb border-nb-black px-4 py-2 font-mono font-bold text-xs tracking-widest mb-6 shadow-nb-sm">
-            001 — ABOUT ME
+            001 ABOUT ME
           </span>
 
           <h2 className="font-display text-[56px] md:text-[72px] leading-[0.95] uppercase text-nb-black">
@@ -97,7 +97,7 @@ export default function About() {
             <span className="font-bold underline decoration-[3px] decoration-nb-blue underline-offset-4">
               AI-powered kitchen assistants
             </span>{" "}
-            to real-time campus booking systems and loan risk platforms — I build{" "}
+            to real-time campus booking systems and loan risk platforms. I build{" "}
             <motion.span 
               className="inline-block bg-nb-black text-nb-yellow px-2 font-bold rotate-1"
               whileHover={{ rotate: -1, scale: 1.05 }}

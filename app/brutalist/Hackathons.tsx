@@ -7,7 +7,7 @@ export default function Hackathons() {
   return (
     <section id="hackathons" className="py-24 px-5 md:px-10 bg-nb-yellow border-t-nb border-b-nb border-nb-black overflow-hidden">
       <span className="inline-block bg-nb-black text-nb-yellow border-nb border-nb-black px-4 py-2 font-mono font-bold text-xs tracking-widest mb-6 shadow-nb-sm">
-        004 — HACKATHONS
+        004 HACKATHONS
       </span>
 
       <h2 className="font-display text-[56px] md:text-[72px] leading-[0.95] uppercase text-nb-black mt-4">
