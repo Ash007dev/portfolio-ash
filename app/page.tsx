@@ -6,9 +6,10 @@ import { useRouter } from "next/navigation";
 import {
   Github, Linkedin, Mail, Terminal,
   Code2, Layers, Wrench, BookOpen,
-  ExternalLink, Trophy, ChevronRight
+  ExternalLink, Trophy, ChevronRight, Zap
 } from "lucide-react";
 import WavyGrid from "./components/WavyGrid";
+import NeoBrutalismView from "./brutalist/NeoBrutalismView";
 
 // --- DATA ---
 
@@ -100,6 +101,7 @@ const SKILLS = {
 
 export default function Home() {
   const router = useRouter();
+  const [mode, setMode] = useState<"minimal" | "brutalist">("minimal");
 
   // ROLES ROTATION
   const roles = ["Full Stack Developer", "CS Undergrad", "Builder", "Tech Enthusiast"];
@@ -131,6 +133,10 @@ export default function Home() {
     },
   };
 
+  if (mode === "brutalist") {
+    return <NeoBrutalismView onToggleMode={() => setMode("minimal")} />;
+  }
+
   return (
     <div className="min-h-screen bg-black text-zinc-300 selection:bg-green-500 selection:text-black font-sans relative">
       {/* WAVY GRID BACKGROUND */}
@@ -155,11 +161,18 @@ export default function Home() {
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className="px-4 py-2 text-sm font-medium text-zinc-500 hover:text-white hover:bg-zinc-800/50 rounded-full transition-all duration-300"
+                className="hidden md:block px-4 py-2 text-sm font-medium text-zinc-500 hover:text-white hover:bg-zinc-800/50 rounded-full transition-all duration-300"
               >
                 {item}
               </a>
             ))}
+            <button
+              onClick={() => setMode("brutalist")}
+              className="ml-2 px-4 py-2 text-xs font-mono font-bold text-black bg-yellow-400 hover:bg-yellow-300 rounded-full shadow-[0_0_15px_rgba(250,204,21,0.3)] transition-all duration-300 uppercase tracking-widest flex items-center gap-2"
+            >
+              <Zap size={14} />
+              Zine Mode
+            </button>
           </div>
         </div>
       </motion.nav>
